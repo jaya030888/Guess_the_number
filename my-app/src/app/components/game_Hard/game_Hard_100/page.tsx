@@ -37,7 +37,7 @@ useEffect(() => {
 function restartGame() {
   setActual_Number_10(Math.floor(Math.random() * 100) + 1)
   setEnteredNumber(undefined)
-  setChances(5)
+  setChances(3)
   setdisplay_win(false)
   setdisplay_try(false)
   setLost(false)
