@@ -114,7 +114,7 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
        
         <div>
         <div className='flex flex-col justify-center items-center' id='section1'>
-          <h2>Guess a Number between 1 and 10</h2>
+          <h2>Guess a Number between 1 and 1000</h2>
           <h2>You have 5 chances</h2>
         </div>
 
