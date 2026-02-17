@@ -26,7 +26,7 @@ const Page = () => {
 useEffect(() => {
   if (chances === 0) {
     setLost(true)
-    router.push("../components/lost");
+    router.push("../lost");
   }
 }, [chances])
 

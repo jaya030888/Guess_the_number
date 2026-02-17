@@ -8,7 +8,7 @@ const Page = () => {
   const router = useRouter();
 
 function restartGame() {
-  router.push("../components/game_Easy")
+  router.push("./level")
 }
 
 

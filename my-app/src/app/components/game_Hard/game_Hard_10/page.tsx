@@ -12,7 +12,7 @@ const Page = () => {
 
   const [enteredNumber, setEnteredNumber] = useState<number|undefined>(undefined);
 
-  const [chances,setChances] = useState<number>(5)
+  const [chances,setChances] = useState<number>(3)
 
 
   const [display_win,setdisplay_win] = useState<boolean>(false)
@@ -29,7 +29,7 @@ const Page = () => {
 useEffect(() => {
   if (chances === 0) {
     setLost(true)
-    router.push("../components/lost");
+    router.push("../lost");
   }
 }, [chances])
 
@@ -37,7 +37,7 @@ useEffect(() => {
 function restartGame() {
   setActual_Number(Math.floor(Math.random() * 10) + 1)
   setEnteredNumber(undefined)
-  setChances(10)
+  setChances(5)
   setdisplay_win(false)
   setdisplay_try(false)
   setLost(false)
@@ -115,7 +115,7 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
         <div>
         <div className='flex flex-col justify-center items-center' id='section1'>
           <h2>Guess a Number between 1 and 1000</h2>
-          <h2>You have 10 chances</h2>
+          <h2>You have 3 chances</h2>
         </div>
 
          <div className='flex justify-center m-10'>
