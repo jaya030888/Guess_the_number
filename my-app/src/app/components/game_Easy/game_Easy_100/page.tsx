@@ -98,7 +98,7 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
   return (
     <>
       <div className="flex justify-between m-10">
-        <Link href="./level" className="text-5xl text-blue-500">
+        <Link href="../level" className="text-5xl text-blue-500">
           ? Guess the Number
         </Link>
 

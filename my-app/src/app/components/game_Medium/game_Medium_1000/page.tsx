@@ -98,14 +98,14 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
   return (
     <>
       <div className="flex justify-between m-10">
-        <Link href="./level" className="text-5xl text-blue-500">
+        <Link href="../level" className="text-5xl text-blue-500">
           ? Guess the Number
         </Link>
 
         <div className="space-x-4">
-          <Link href='./game_Easy_10'>1-10</Link>
-          <Link href='./game_Easy_100'>1-100</Link>
-          <Link href='./game_Easy_1000'>1-1000</Link>
+          <Link href='./game_Medium_10'>1-10</Link>
+          <Link href='./game_Medium_100'>1-100</Link>
+          <Link href='./game_Medium_1000'>1-1000</Link>
         </div>
       </div>
 

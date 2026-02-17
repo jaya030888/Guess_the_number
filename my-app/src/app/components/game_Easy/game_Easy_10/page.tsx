@@ -9,7 +9,6 @@ const Page = () => {
   () => Math.floor(Math.random() * 10) + 1
 );
 
-
   const [enteredNumber, setEnteredNumber] = useState<number|undefined>(undefined);
 
   const [chances,setChances] = useState<number>(10)
@@ -20,10 +19,8 @@ const Page = () => {
   const [lost,setLost] = useState<boolean>(false)
   
 
-
   const [history, setHistory] = useState<string[]>([])
 
-  
   const router = useRouter();
 
 useEffect(() => {
@@ -98,19 +95,18 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
   return (
     <>
       <div className="flex justify-between m-10">
-        <Link href="./level" className="text-5xl text-blue-500">
+        <Link href="../level" className="text-5xl text-blue-500">
           ? Guess the Number
         </Link>
 
         <div className="space-x-4">
-          <Link href='./game_Easy/game_Easy_10'>1-10</Link>
-          <Link href='./game_Easy/game_Easy_100'>1-100</Link>
-          <Link href='./game_Easy/game_Easy_1000'>1-1000</Link>
+          <Link href='./game_Easy_10'>1-10</Link>
+          <Link href='./game_Easy_100'>1-100</Link>
+          <Link href='./game_Easy_1000'>1-1000</Link>
         </div>
       </div>
 
       
-
        
         <div>
         <div className='flex flex-col justify-center items-center' id='section1'>
