@@ -128,7 +128,7 @@ function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
           onChange={handleChange}
         />
         &lt;=
-        <span>10</span>
+        <span>1000</span>
       </p>
 
       </div>
